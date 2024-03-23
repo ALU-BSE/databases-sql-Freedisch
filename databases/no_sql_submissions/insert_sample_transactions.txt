@@ -1,0 +1,101 @@
+// Insert sample data into Transaction collection
+
+db.Transactions.insertMany(
+	[
+		{
+		"buyerId":ObjectId('65ff1ac21db2aeb1d9e53d9f'),
+		"productId":ObjectId('65ff1ea71db2aeb1d9e53daf'),
+		"date": "05-02-23",
+		"quantity":5
+		
+	},
+	{
+		"buyerId": ObjectId('65ff1ac21db2aeb1d9e53d9f'),
+		"productId":ObjectId('65ff1ea71db2aeb1d9e53daf'),
+		"date": "10-09-23",
+		"quantity": 7
+		
+	},
+	{
+		"buyerId":  ObjectId('65ff1ac21db2aeb1d9e53d97'),
+		"productId":ObjectId('65ff1ea71db2aeb1d9e53daf'),
+		"date": "02-05-25",
+		"quantity": 8
+		
+	},
+	{
+		"buyerId": ObjectId('65ff1ac21db2aeb1d9e53d9e'),
+		"productId":ObjectId('65ff1ea71db2aeb1d9e53db0'),
+		"date": "02-10-24",
+		"quantity": 9
+		
+	},
+	{
+		"buyerId": ObjectId('65ff1ac21db2aeb1d9e53d9e'),
+		"productId": ObjectId('65ff1ea71db2aeb1d9e53db0'),
+		"date": "06-10-23",
+		"quantity":7
+	},
+	{
+		"buyerId": ObjectId('65ff1ac21db2aeb1d9e53d9f'),
+		"productId": ObjectId('65ff1ea71db2aeb1d9e53db1'),
+		"date": "10-10-23",
+		"quantity": 14
+		
+	},
+	{
+		"buyerId": ObjectId('65ff1ac21db2aeb1d9e53d9f'),
+		"productId": ObjectId('65ff1ea71db2aeb1d9e53db1'),
+		"date": "10-10-24",
+		"quantity": 22
+		
+	},
+	{
+		"buyerId":  ObjectId('65ff1ac21db2aeb1d9e53da0'),
+		"productId": ObjectId('65ff1ea71db2aeb1d9e53db2'),
+		"date": "12-11-23",
+		"quantity": 4
+	
+	},
+	{
+		"buyerId": ObjectId('65ff1ac21db2aeb1d9e53da0'),
+		"productId":ObjectId('65ff1ea71db2aeb1d9e53db3'),
+		"date": "07-04-23",
+		"quantity": 12
+		
+	},
+	{
+		"buyerId": ObjectId('65ff1ac21db2aeb1d9e53da1'),
+		"productId":ObjectId('65ff1ea71db2aeb1d9e53db4'),
+		"date": "09-06-24",
+		"quantity": 17
+		
+	},
+	{
+		"buyerId":   ObjectId('65ff1ac21db2aeb1d9e53da1'),
+		"productId":ObjectId('65ff1ea71db2aeb1d9e53db4'),
+		"date": "01-10-24",
+		"quantity": 26
+		
+	},
+	{
+		"buyerId":  ObjectId('65ff1ac21db2aeb1d9e53d97'),
+		"productId": ObjectId('65ff1ea71db2aeb1d9e53db4'),
+		"date": "06-07-24",
+		"quantity": 4
+	},
+	{
+		"buyerId": ObjectId('65ff1ac21db2aeb1d9e53d97'),
+		"productId": ObjectId('65ff1ea71db2aeb1d9e53db4'),
+		"date": "01-03-24",
+		"quantity": 77
+		
+	},
+	{
+		"buyerId": ObjectId('65ff1ac21db2aeb1d9e53d9d'),
+		"productId": ObjectId('65ff1ea71db2aeb1d9e53db5'),
+		"date": "04-09-23",
+		"quantity": 45
+		
+	}]);
+	

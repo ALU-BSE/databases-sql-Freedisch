@@ -1,0 +1,58 @@
+
+// Insert sample data into Products collection
+
+db.Products.insertMany(
+	
+		[
+   
+    {
+        "name": "Bluetooth Running Headphones",
+        "description": "Lightweight and waterproof headphones with excellent sound quality, ideal for running and gym workouts.",
+        "price": 29.95,
+        "listedBy":ObjectId('65ff1ac21db2aeb1d9e53d97')
+    },
+    {
+        "name": "Portable External SSD",
+        "description": "1TB ultra-fast external SSD, compact and durable for high-speed data transfers.",
+        "price": 129.50,
+        "listedBy":ObjectId('65ff1ac21db2aeb1d9e53d97')
+    },
+    {
+        "name": "Smart Home Security Camera",
+        "description": "1080p HD smart security camera with night vision, motion alerts, and two-way audio.",
+        "price": 99.99,
+        "listedBy":ObjectId('65ff1ac21db2aeb1d9e53d98'),
+    },
+    {
+        "name": "Mechanical Gaming Keyboard",
+        "description": "RGB backlit mechanical gaming keyboard with customizable keys and tactile feedback.",
+        "price": 75.00,
+        "listedBy":ObjectId('65ff1ac21db2aeb1d9e53d97')
+    },
+    {
+        "name": "Wireless Charging Pad",
+        "description": "Fast-charging wireless pad compatible with Qi-enabled devices.",
+        "price": 19.99,
+        "listedBy":ObjectId('65ff1ac21db2aeb1d9e53d98'),
+    },
+    {
+        "name": "Smartwatch",
+        "description": "Multi-functional smartwatch with heart rate monitor, GPS, and activity tracking.",
+        "price": 149.99,
+        "listedBy":ObjectId('65ff1ac21db2aeb1d9e53d99'),
+    },
+    {
+        "name": "Noise-Cancelling Headphones",
+        "description": "Premium noise-cancelling headphones with superior sound quality and comfortable design.",
+        "price": 199.99,
+        "listedBy":ObjectId('65ff1ac21db2aeb1d9e53d9b'),
+    },
+    {
+        "name": "4K Ultra HD TV",
+        "description": "65-inch 4K Ultra HD Smart TV with HDR, Dolby Vision, and built-in streaming apps.",
+        "price": 899.99,
+        "listedBy":ObjectId('65ff1ac21db2aeb1d9e53d97')
+    }]);
+	
+   
+    
