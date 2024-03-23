@@ -1,0 +1,59 @@
+// Insert sample data into Products collection
+
+db.Users.insertMany([
+	{
+		"name": "Calvin Kinney",
+		"email": "elit.pretium@yahoo.ca",
+		"password": "BWA63OKO2BX"
+	},
+	{
+		"name": "Giacomo Stephenson",
+		"email": "vulputate.eu@outlook.couk",
+		"password": "TDT78TRJ3SU"
+	},
+	{
+		"name": "Angela Walters",
+		"email": "nisi.aenean.eget@outlook.com",
+		"password": "EYR23VUY8IG"
+	},
+	{
+		"name": "Stuart Sutton",
+		"email": "mauris@hotmail.net",
+		"password": "IPQ28CMS1SH"
+	},
+	{
+		"name": "Rylee Downs",
+		"email": "massa.quisque@hotmail.org",
+		"password": "IBW63KAN7GC"
+	},
+	{
+		"name": "Martena Nicholson",
+		"email": "convallis.erat@aol.couk",
+		"password": "MUX66ELY4QC"
+	},
+	{
+		"name": "Sonia Rush",
+		"email": "aliquam.eros@hotmail.couk",
+		"password": "CSR66UJC8GE"
+	},
+	{
+		"name": "Helen Harding",
+		"email": "massa.quisque@yahoo.ca",
+		"password": "YFB16YZW1LJ"
+	},
+	{
+		"name": "Armando Simmons",
+		"email": "nulla.eget@icloud.net",
+		"password": "BSM31CFL5CI"
+	},
+	{
+		"name": "Elijah Terrell",
+		"email": "tortor.nibh.sit@protonmail.com",
+		"password": "XUY10LGT2BR"
+	},
+	{
+		"name": "Lynn Barr",
+		"email": "odio@protonmail.org",
+		"password": "WRF32BQQ9JY"
+	},
+]);

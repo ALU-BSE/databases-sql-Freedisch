@@ -1,0 +1,91 @@
+// Create Users collection
+db.createCollection("Users", {
+   validator: {
+      $jsonSchema: {
+         bsonType: "object",
+         required: ["name", "email", "password"],
+         properties: {
+            name: {
+               bsonType: "string",
+               minLength: 2,
+               description: "must be a string and at least 2 characters long"
+            },
+            email: {
+               bsonType: "string",
+               pattern: "^.+@.+\..+$",
+               description: "must be a string and match the email pattern"
+            },
+            password: {
+               bsonType: "string",
+               minLength: 8,
+               description: "must be a string and at least 8 characters long"
+            }
+         }
+      }
+   }
+});
+
+//Create Unique Index on the email
+db.Users.createIndex({ email: 1 }, { unique: true });
+
+//Create Index on the name Field
+db.Users.createIndex({ name: 1 },  { unique: true });
+
+// Create Product collection
+db.createCollection("Products", {
+   validator: {
+      $jsonSchema: {
+         bsonType: "object",
+         required: ["name", "description", "price", "listedBy"],
+         properties: {
+            name: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            },
+            description: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            },
+            price: {
+               bsonType: ["double", "int", "long", "decimal"],
+               description: "must be a number (double, int, long, decimal, or float) and is required"
+            },
+            listedBy:{
+                bsonType: "objectId",
+               description: "must be an ObjectId and is required"
+            }
+         }
+      }
+   }
+});
+
+
+
+
+// Create Transactions collection
+db.createCollection("Transactions", {
+   validator: {
+      $jsonSchema: {
+         bsonType: "object",
+         required: ["buyerId", "productId", "date", "quantity"],
+         properties: {
+            buyerId: {
+                bsonType: "objectId",
+               description: "must be an ObjectId and is required"
+            },
+            productId: {
+               bsonType: "objectId",
+               description: "must be an ObjectId and is required"
+            },
+            date: {
+               bsonType: "string",
+               description: "must be a Date object and is required"
+            },
+            quantity: {
+               bsonType: "int",
+               description: "must be an integer and is required"
+            },
+         }
+      }
+   }
+});
